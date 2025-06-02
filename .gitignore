@@ -1,0 +1,60 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+
+# Maven / Gradle
+/target/
+/build/
+/out/
+/.gradle/
+/mvnw
+.mvn/
+
+# Logs
+*.log
+
+# Spring Boot configuration files
+application.properties
+application.yml
+application-dev.properties
+application-prod.properties
+
+# HTTP requests
+*.http
+
+# Compiled class files
+*.class
+
+# IntelliJ and Eclipse project files
+*.classpath
+*.project
+*.settings/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+
+# Dependency cache
+**/node_modules/
+**/.pnp/
+.pnp.js
+
+# Environment files
+.env
+.env.*
+
+# JAR/WAR files
+*.jar
+*.war
+
+# Backup or rejected files
+*.orig
+*.rej
