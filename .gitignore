@@ -26,6 +26,10 @@ application.yml
 application-dev.properties
 application-prod.properties
 
+*.properties
+*.yml
+*.yaml
+
 # HTTP requests
 *.http
 
