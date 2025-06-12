@@ -10,12 +10,17 @@ COPY src ./src
 
 RUN mvn clean package
 
+# ----------------- Runner Stage ------------------
+
 FROM openjdk:21-jdk AS runner
 
 WORKDIR /app
 
-COPY --from=builder ./app/target/patient-service-0.0.1-SNAPSHOT.jar ./app.jar
+# Set heap memory limits
+ENV JAVA_OPTS="-Xms512m -Xmx1024m"
+
+COPY --from=builder /app/target/patient-service-0.0.1-SNAPSHOT.jar ./app.jar
 
 EXPOSE 4000
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
