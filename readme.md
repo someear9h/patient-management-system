@@ -94,14 +94,6 @@ Built using **modern cloud-native practices** — includes **Kafka, gRPC, Docker
 
 > Deployment attempted using **AWS LocalStack**, ECS, CloudFormation (IaC)
 
-### Infrastructure Includes:
-- ✅ VPC, Subnets
-- ✅ RDS Databases
-- ✅ MSK (Kafka) Cluster
-- ✅ ECS Services & Task Definitions
-- ✅ Application Load Balancer
-- ✅ Health Checks & Service Discovery
-
 > ⚠️ Note: Deployment was done up to image building & ECS setup; container-level launch via LocalStack ECS requires further fixes due to mock environment limitations.
 
 ---
